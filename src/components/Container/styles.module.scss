@@ -1,0 +1,19 @@
+@import "src/assets/mixins";
+
+.container {
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+
+
+  @include xs{
+    padding: 0 9%;
+  }
+}
+
+.fluid {
+  margin: 0 auto;
+  max-width: 1240px;
+}

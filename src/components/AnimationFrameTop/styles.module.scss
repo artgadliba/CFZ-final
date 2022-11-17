@@ -1,0 +1,64 @@
+@import "src/assets/mixins";
+
+
+.container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  // max-width: 1920px;
+  margin-top: 20px;
+  overflow: hidden;
+
+
+  @include xs {
+    margin-top: 45px;
+  }
+}
+
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  z-index: 0;
+
+img{
+ 
+  //@include xs {
+  //  width: 100%;
+  //  object-fit:contain;
+  //  margin-bottom: 190px;
+  //  }
+
+}
+
+  //@include xs {
+  //  height: 345px;
+  //}
+}
+
+.headerClouds {
+  height: 100%;
+  width: 100%;
+}
+.cloud {
+  position: absolute;
+  top: 50px;
+  z-index: -2;
+
+  @include xs {
+    top: 1px;
+    // left: 32px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -20%;
+  }
+}

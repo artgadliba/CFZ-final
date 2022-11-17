@@ -1,0 +1,40 @@
+@import "src/assets/mixins";
+
+.quote {
+  width: 100%;
+  max-width: 100vw;
+  padding-right: 124px;
+  padding-left: 124px;
+  position: relative;
+  z-index: 9999;
+
+  margin: 0 auto;
+  margin-top: 89px;
+  display: block;
+
+  // @include sm {
+  //   display: none;
+  // }
+
+  @include xlg {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  @include lg {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+  @include md {
+    padding-right: 40px;
+    padding-left: 40px;
+    height: auto;
+  }
+
+  @include sm {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 47px;
+  }
+}

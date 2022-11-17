@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+
+@font-face {
+  font-family: 'Bicubik';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Bicubik'),
+  url('assets/fonts/Bicubik.otf') format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat-Bold'),
+  url('assets/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat-Light'),
+  url('assets/fonts/Montserrat-Light.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Montserrat-Medium'),
+  url('assets/fonts/Montserrat-Medium.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'),
+  url('assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: local('Roboto');
+  unicode-range: U+20BD;
+  font-display: swap;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  font-family: Bicubik, Montserrat, Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   overflow: hidden;
+}
+
+button {
+  font-family: Bicubik, Roboto, sans-serif;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-style: normal;
+  font-weight: 300;
+}
+
+section {
+  position: relative;
+  z-index: 10;
+}
+
+@media screen and (max-width: 1024px) {
+  * {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  input,
+  textarea {
+    -webkit-user-select: text;
+    -webkit-touch-callout: default;
+  }
+}

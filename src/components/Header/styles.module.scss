@@ -1,0 +1,26 @@
+@import "src/assets/mixins";
+@import "src/assets/colors";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 65px 20px 0;
+  z-index: 30;
+  max-width: 1060px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 7px;
+  @include xs {
+    padding: 26px 15px 0;
+  }
+}
+
+.button {
+  margin-left: 20px;
+  @include xs {
+    height: 25px;
+    font-size: 11px;
+    line-height: 14px;
+  }
+}

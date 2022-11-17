@@ -1,0 +1,197 @@
+@import "src/assets/mixins";
+
+.content {
+  position: relative;
+  width: 500px;
+  height: auto;
+
+  @include xs {
+    width: 256px;
+  }
+}
+
+:global .swiper-wrapper-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(128px);
+  border-radius: 25px;
+  max-width: 500px;
+  width: auto;
+
+  @include xs {
+    backdrop-filter: none;
+  }
+
+  @include xs {
+    width: 256px;
+    height: 371px;
+    backdrop-filter: none;
+  }
+}
+
+:global .swiper-cards {
+  max-width: 500px;
+  width: 500px;
+  max-height: 660px;
+  margin: 0 0 !important;
+
+  @include xs {
+    width: 256px;
+  }
+}
+
+:global .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 49px;
+  padding-bottom: 25px;
+
+  @include xs {
+    padding-top: 28px;
+    padding-bottom: 26px;
+  }
+}
+
+:global .swiper-button-prev {
+  display: block;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -22px;
+
+  @include sm {
+    display: none;
+  }
+}
+
+:global .swiper-button-next {
+  display: block;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -22px;
+
+  @include sm {
+    display: none;
+  }
+}
+
+:global .swiper-pagination-bullet {
+  height: 6px;
+  width: 6px;
+  background: linear-gradient(315deg, #DF49C7 0%, #F986BE 100%);
+  opacity: 0.2;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+:global .swiper-pagination-bullet-active {
+  opacity: 1;
+  height: 9px;
+  width: 9px;
+}
+
+:global .swiper-pagination {
+  display: none;
+
+  @include xs {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -9px;
+
+    >div {
+      margin-right: 9px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.next,
+.prev {
+  width: 44px;
+  height: 44px;
+
+  button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.prev {
+  button svg {
+    transform: rotate(180deg);
+  }
+}
+
+.image {
+  cursor: pointer;
+  object-fit: contain;
+  width: 390px;
+  height: 562px;
+  filter: drop-shadow(0px 0px 2px #FFFFFF) drop-shadow(0px 0px 14px #35C1FD);
+
+  @include xs {
+    width: 202px;
+    height: 290px;
+  }
+
+  z-index: 999;
+}
+
+.imageCloud {
+  z-index: 10;
+  position: absolute;
+  display: none;
+
+  @include sm {
+    display: block;
+  }
+
+  &.right {
+    right: -336px;
+    bottom: 131px;
+
+    @include xs {
+      bottom: 58px;
+      right: -345px;
+    }
+  }
+
+  &.left {
+    left: -319px;
+    top: -114px;
+  }
+}
+
+:global .swiper-wrapper-text {
+  font-family: 'Bicubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  background: linear-gradient(315deg, rgba(223, 73, 199, 0.82) 0%, rgba(249, 134, 190, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-bottom: 23px;
+
+  @include xs {
+    font-size: 10px;
+    padding-bottom: 7px;
+  }
+}

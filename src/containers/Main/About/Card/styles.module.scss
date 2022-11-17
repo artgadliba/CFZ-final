@@ -1,0 +1,79 @@
+@import "src/assets/colors";
+@import "src/assets/mixins";
+
+.card {
+  position: relative;
+  width: 100%;
+  max-width: 416px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include xs {
+    max-width: 254px;
+  }
+}
+
+.title {
+  width: 332px;
+  height: 48px;
+  background: linear-gradient(315.69deg, rgba(243, 116, 181, 0.64) 1.18%, rgba(255, 246, 169, 0.87) 80.97%);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  font-size: 24px;
+  line-height: 30px;
+  color: $pink;
+
+  @include xs {
+    width: 224px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.text {
+  margin-top: -24px;
+  width: 100%;
+  max-width: 416px;
+  padding: 46px 42px;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: $coral;
+  font-size: 24px;
+  line-height: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(128px);
+  border-radius: 25px;
+
+  @include xs {
+    width: 254px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 32px 22px;
+  }
+}
+
+.imageCloud {
+  z-index: 10;
+  position: absolute;
+  display: none;
+  @include sm {
+    display: block;
+  }
+  &.right {
+    right: -233px;
+    bottom: 106px;
+    @include xs {
+      right: -243px;
+      bottom: 127px;
+    }
+  }
+  &.left {
+    left: -247px;
+    top: -99px;
+  }
+}

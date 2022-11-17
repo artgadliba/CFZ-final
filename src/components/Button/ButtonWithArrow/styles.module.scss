@@ -1,0 +1,37 @@
+@import "src/assets/colors";
+@import "src/assets/mixins";
+
+
+.container {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(360deg, #F62891 0%, #FFF387 90.1%);
+  border-radius: 50%;
+}
+
+.btn {
+  height: 30px;
+  width: 30px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(315deg, #DF49C7 0%, #F986BE 100%);
+  border-radius: 50%;
+}
+
+@include xs {
+  .container {
+    width: 24px;
+    height: 24px;
+  }
+
+  .btn {
+    height: 10px;
+    width: 10px;
+    padding: 2px 3px;
+  }
+}

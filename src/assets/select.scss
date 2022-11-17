@@ -1,0 +1,103 @@
+.react-select__control {
+  position: static;
+  min-height: 64px;
+  border-color: #efefef !important;
+  height: 64px;
+  width: 64px;
+  border-radius: 32px !important;
+  z-index: 20;
+}
+
+.react-select-container {
+  position: static;
+}
+
+.react-select__input-container {
+  color: #df49c7 !important;
+}
+
+.react-select__single-value {
+  color: #df49c7 !important;
+  display: flex;
+  justify-content: center;
+}
+
+.react-select__dropdown-indicator {
+  color: white !important;
+}
+
+.react-select__indicator {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(315deg, #DF49C7 0%, #F986BE 100%);
+  border-radius: 12px;
+  padding: 0 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.react-select__indicator-separator {
+  display: none;
+  background-color: #efefef !important;
+}
+
+.react-select__control--is-disabled {
+  background-color: #fafafa !important;
+}
+
+.react-select__control--is-focused {
+  border: 1px solid rgba(166, 173, 181, 0.2);
+  box-shadow: none !important;
+  border-color: rgba(166, 173, 181, 0.2) !important;
+}
+
+.react-select__placeholder {
+  display: none;
+}
+
+.react-select__value-container {
+  color: #df49c7 !important;
+  font-size: 24px;
+  width: 64px;
+}
+
+.react-select__menu {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2) !important;
+  background-color: #ffffff !important;
+  width: 64px;
+}
+
+.react-select__option {
+  color: #df49c7 !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+  background: none !important;
+  width: 64px;
+}
+
+.react-select__option--is-focused {
+  color: #fa820f !important;
+  cursor: pointer !important;
+  position: relative;
+}
+
+
+.react-select__option--is-selected {
+  color: #fa820f !important;
+}
+
+
+.react-select__indicators {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(360deg, #F62891 0%, #FFF387 90.1%);
+  border-radius: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

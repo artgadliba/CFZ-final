@@ -1,0 +1,75 @@
+{
+	"name": "crypto-frenz",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@coinbase/wallet-sdk": "^3.3.0",
+		"@testing-library/jest-dom": "^5.16.4",
+		"@testing-library/react": "^13.2.0",
+		"@testing-library/user-event": "^13.5.0",
+		"@walletconnect/web3-provider": "^1.7.8",
+		"abi-decoder": "^2.4.0",
+		"add": "^2.0.6",
+		"authereum": "^0.1.14",
+		"clsx": "^1.1.1",
+		"husky": "^7.0.4",
+		"lint-staged": "^12.4.1",
+		"next": "^12.1.6",
+		"node-polyfill-webpack-plugin": "^1.1.4",
+		"or": "^0.2.0",
+		"prettier": "^2.6.2",
+		"react": "^18.2.0",
+		"react-app-rewired": "^2.2.1",
+		"react-dom": "^18.2.0",
+		"react-hooks-global-state": "^2.0.0-rc.0",
+		"react-modal": "^3.15.1",
+		"react-scripts": "5.0.1",
+		"react-select": "^5.3.1",
+		"sass": "^1.51.0",
+		"swiper": "^8.1.4",
+		"truncate-eth-address": "^1.0.2",
+		"use-between": "^1.3.4",
+		"web-vitals": "^2.1.4",
+		"web3": "^1.7.3",
+		"web3-utils": "^1.7.4",
+		"web3modal": "^1.9.8",
+		"yarn": "^1.22.19"
+	},
+	"scripts": {
+		"debug": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+			"prettier --write"
+		]
+	},
+	"devDependencies": {
+		"dotenv-webpack": "^7.1.0"
+	}
+}

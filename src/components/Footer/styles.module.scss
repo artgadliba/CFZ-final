@@ -1,0 +1,146 @@
+@import "src/assets/colors";
+@import "src/assets/mixins";
+
+
+footer {
+  position: relative;
+  overflow: hidden;
+  margin-top: 80px;
+  padding-top: 100px;
+  z-index: 10;
+  width: 100%;
+  @include sm {
+    margin-top: 0;
+  }
+}
+
+.footer {
+  box-sizing: border-box;
+  position: relative;
+  height: 130px;
+  width: 100%;
+  background: linear-gradient(181.37deg, #328668 -41.82%, #52BF71 95.41%);
+  overflow: hidden;
+
+  @media (max-width: 1397px) {
+    height: 110px;
+  }
+
+  @media (max-width: 1200px) {
+    height: 90px;
+  }
+
+  @include md {
+    margin-top: 15px;
+    height: 75px;
+  }
+
+  @include xs {
+    margin-top: 20px;
+    height: 60px;
+  }
+
+  @media (max-width: 458px) {
+    margin: 0;
+    padding: 0 ;
+   height: 50px;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 58px;
+
+  @media (max-width: 1200px) {
+    padding-top: 42px;
+  }
+
+  @include md {
+    padding-top: 29px;
+  }
+
+  @include xs {
+    padding-top: 29px;
+  }
+}
+
+.footer_container {
+  @media (max-width: 458px) {
+    padding-top: 15px;
+  }
+}
+
+
+.button {
+  z-index: 12;
+  background: white;
+
+  button {
+    background: white;
+  }
+
+  svg {
+    transform: rotate(270deg);
+
+    path {
+      stroke: $green;
+    }
+  }
+}
+
+.image {
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+  width: 100%;
+  top: 28px;
+
+  @media (max-width: 1397px) {
+    //top: 37px;
+  }
+
+  @media (max-width: 1200px) {
+    top: 24px;
+  }
+
+  @include md {
+    top: 24px;
+  }
+
+  @media (max-width: 939px) {
+    top: 34px;
+  }
+
+  @include sm {
+    top: 24px;
+    width: 140%;
+  }
+
+  @media (max-width: 677px) {
+    top: 32px;
+  }
+
+  @include xs {
+    display: none;
+  }
+}
+
+.treesWithRiverMobile {
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+  top: 53%;
+  @include xs {
+    display: block;
+  }
+  @media (max-width: 458px) {
+    //transform: scale(2);
+  }
+
+}

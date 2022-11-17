@@ -1,0 +1,71 @@
+@import "src/assets/mixins";
+
+
+.background {
+  position: relative;
+  z-index: 0;
+  background: linear-gradient(180deg, #619CF3 -7.33%, #95CBFF 8%, #9AD7F9 19.36%, #E2F5FF 91.99%);
+}
+
+.headerClouds {
+
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 50%;
+  bottom: 0;
+  background-position: center ;
+  height: 100%;
+  transform: translate(-18%, 5%);
+  @media (max-width: 1264px) {
+  }
+  @include sm {
+    display: none;
+  }
+}
+
+.mobile {
+
+  position: absolute;
+  z-index: -1;
+  top: 60px;
+  right: 50px;
+  bottom: 0;
+  height: 100%;
+  display: none;
+  @include sm {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+  @include xs {
+    top: 34px;
+    right: 40px;
+  }
+
+  @media (max-width: 460px) {
+    display: none;
+
+  }
+}
+
+.mobile460 {
+
+  display: none;
+  background-position: 96% 3.25%, 50% 1.5%;
+  background-repeat: no-repeat;
+  background-size: 92%, 100%;
+  position: absolute;
+  z-index: -1;
+  top: 30px;
+  right: 0px;
+  bottom: 0;
+  width: 100%;
+  @media (max-width: 460px) {
+    display: block;
+
+  }
+}

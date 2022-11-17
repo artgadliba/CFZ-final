@@ -1,0 +1,36 @@
+@import "./vars.scss";
+
+// small devices (smartphone)
+@mixin xs {
+  @media (max-width: #{$screen-xs}) {
+    @content;
+  }
+}
+
+// Medium devices (tablets)
+@mixin sm {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
+// Medium devices (big tablets, like iPad Pro)
+@mixin md {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+// Large devices (laptops)
+@mixin lg {
+  @media (max-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
+// Extra Large devices (big laptops)
+@mixin xlg {
+  @media (max-width: #{$screen-xlg}) {
+    @content;
+  }
+}
